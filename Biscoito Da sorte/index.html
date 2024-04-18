@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscoito Da Sorte </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <main>
+
+    <div class="screen1 ">
+        <div class="text">
+          <h1> Qual é a sua sorte <br> de hoje?</h1>
+          <p>Abra o biscoito e descubra!</p>
+        </div>
+        <form>
+            <button  onclick="hideScreens(event)" class="button1">
+                <img src="img/fortune-cookie.png">
+            </button>
+
+        </form>
+    </div>
+    <div class="screen2 hide">
+        <div class="text">
+        <h1> Aqui está a sua sorte <br> de hoje: </h1>
+        <p id="mensagem"></p>
+      </div>
+      <div class="sortedehoje">
+    </div>
+    <img class="biscoitoabrindo" src="img/opened-cookie.png">
+        <button onclick="showScreen()" class="button2">
+            Abrir outro biscoito
+        </button>
+
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
